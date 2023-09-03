@@ -2,8 +2,8 @@
 title: Building an Algebraic Hierarchy
 separator: <!--s-->
 verticalSeparator: <!--v-->
-theme: solarized
-highlight-theme: monokai
+theme: simple
+highlight-theme: zenburn
 css: custom.css
 revealOptions:
   controls: false
