@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>reveal-md deployed to gh-pages</title>
+    <title>Building an Algebraic Hierarchy</title>
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./dist/reset.css" />
     <link rel="stylesheet" href="./dist/reveal.css" />
@@ -18,48 +18,30 @@
     <div class="reveal">
       <div class="slides"><section  data-markdown><script type="text/template">
 
-# Slides are working!
 
-# reveal-md & github-pages
+# Building an Algebraic Hierarchy
 
-Hi there!!!!
+1. Basics
+2. Morphisms
+3. Subobjects
 
-</script></section><section  data-markdown><script type="text/template">
-## github-pages + reveal-md = awesome
+---
 
-* write your slides in markdown <!-- .element: class="fragment" data-fragment-index="0" -->
-* commit them to github <!-- .element: class="fragment" data-fragment-index="1" -->
-* get them automatically deployed <!-- .element: class="fragment" data-fragment-index=2" -->
+## Basics
 
-</script></section><section  data-markdown><script type="text/template">
-## get started
+```lean
+class Inv (α : Type) where
+  /-- The inversion function -/
+  inv : α → α
+```
 
-* just press this nice & friendly green button
-![nice & friendly green button](img/1_pressButton.png)
+---
 
-</script></section><section  data-markdown><script type="text/template">
-## get started
+## Morphisms
 
-* give your new repo a name
-* keep it public! (or git will deny to publish it)
+---
 
-</script></section><section  data-markdown><script type="text/template">
-## get started
-
-* choose 'gh-pages' to be the public-branch
-![settings](img/2_settings.png)
-
-</script></section><section  data-markdown><script type="text/template">
-## get started
-
-* choose 'gh-pages' to be the public-branch by:
-  * first switching to master
-  * and then switching back to gh-pages
-  * github-bug? ¯\\_(ツ)_/¯
-
-</script></section><section  data-markdown><script type="text/template">
-![settings](img/3_selectBranch.png)
-
+## Subobjects
 
 </script></section></div>
     </div>
