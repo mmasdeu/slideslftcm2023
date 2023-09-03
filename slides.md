@@ -1,5 +1,5 @@
 ---
-title: reveal-md deployed to gh-pages
+title: Building an Algebraic Hierarchy
 separator: <!--s-->
 verticalSeparator: <!--v-->
 theme: solarized
@@ -12,11 +12,28 @@ revealOptions:
   backgroundTransition: 'fade'
 ---
 
-# Slides are working!
 
-# reveal-md & github-pages
+# Building an Algebraic Hierarchy
 
-Hi there!!!!
+1. Basics
+2. Morphisms
+3. Subobjects
 
-{{1_getStarted.md}}
+---
+
+## Basics
+
+```lean
+class Inv (α : Type) where
+  /-- The inversion function -/
+  inv : α → α
+```
+
+---
+
+## Morphisms
+
+---
+
+## Subobjects
 
