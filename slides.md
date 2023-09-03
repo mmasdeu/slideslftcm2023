@@ -12,8 +12,11 @@ revealOptions:
   backgroundTransition: 'fade'
 ---
 
+# Slides are working!
+
 # reveal-md & github-pages
 
+Hi there!!!
+
 {{1_getStarted.md}}
-{{2_writing.md}}
-{{3_extras.md}}
+
