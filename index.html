@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md deployed to gh-pages</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
+
+    <link rel="stylesheet" href="./_assets/custom.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+# Slides are working!
+
+# reveal-md & github-pages
+
+Hi there!!!!
+
+</script></section><section  data-markdown><script type="text/template">
+## github-pages + reveal-md = awesome
+
+* write your slides in markdown <!-- .element: class="fragment" data-fragment-index="0" -->
+* commit them to github <!-- .element: class="fragment" data-fragment-index="1" -->
+* get them automatically deployed <!-- .element: class="fragment" data-fragment-index=2" -->
+
+</script></section><section  data-markdown><script type="text/template">
+## get started
+
+* just press this nice & friendly green button
+![nice & friendly green button](img/1_pressButton.png)
+
+</script></section><section  data-markdown><script type="text/template">
+## get started
+
+* give your new repo a name
+* keep it public! (or git will deny to publish it)
+
+</script></section><section  data-markdown><script type="text/template">
+## get started
+
+* choose 'gh-pages' to be the public-branch
+![settings](img/2_settings.png)
+
+</script></section><section  data-markdown><script type="text/template">
+## get started
+
+* choose 'gh-pages' to be the public-branch by:
+  * first switching to master
+  * and then switching back to gh-pages
+  * github-bug? ¯\\_(ツ)_/¯
+
+</script></section><section  data-markdown><script type="text/template">
+![settings](img/3_selectBranch.png)
+
+
+</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        slideNumber: true,
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":false,"slideNumber":false,"transition":"slide","backgroundTransition":"fade"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
